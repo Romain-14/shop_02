@@ -1,0 +1,11 @@
+<header>
+    <nav>
+        <a href="/" class="<%= template.includes("home") ? "active" : null %>">home</a>
+        <a href="/product" class="<%= template.includes("product") ? "active" : null %>">product</a>
+    </nav>
+
+    <form action="/search" method="POST">
+        <input type="search" name="search" id="search" placeholder="Rechercher un produit">
+        <button type="submit" class="btn_search"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+</header>
